@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\web_browser.FrmWebBrowser.resources
+obj\Debug\web_browser.Properties.Resources.resources
+obj\Debug\web browser.csproj.GenerateResource.Cache
+bin\Debug\web browser.exe
+bin\Debug\web browser.pdb
+obj\Debug\web browser.exe
+obj\Debug\web browser.pdb

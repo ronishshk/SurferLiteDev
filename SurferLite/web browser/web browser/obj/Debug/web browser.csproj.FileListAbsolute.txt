@@ -1,0 +1,8 @@
+E:\work\818_refresh stop\refresh stop\web browser\web browser\obj\Debug\web browser.exe
+E:\work\818_refresh stop\refresh stop\web browser\web browser\obj\Debug\web browser.pdb
+E:\work\818_refresh stop\refresh stop\web browser\web browser\bin\Debug\web browser.exe
+E:\work\818_refresh stop\refresh stop\web browser\web browser\bin\Debug\web browser.pdb
+E:\work\818_refresh stop\refresh stop\web browser\web browser\obj\Debug\web browser.csprojResolveAssemblyReference.cache
+E:\work\818_refresh stop\refresh stop\web browser\web browser\obj\Debug\web_browser.FrmWebBrowser.resources
+E:\work\818_refresh stop\refresh stop\web browser\web browser\obj\Debug\web_browser.Properties.Resources.resources
+E:\work\818_refresh stop\refresh stop\web browser\web browser\obj\Debug\web browser.csproj.GenerateResource.Cache
