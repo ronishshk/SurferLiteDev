@@ -226,5 +226,7 @@ namespace SurferLite
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+       
     }
 }
