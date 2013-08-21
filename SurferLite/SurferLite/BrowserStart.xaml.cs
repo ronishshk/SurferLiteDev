@@ -234,6 +234,8 @@ namespace SurferLite
             String content = listboxhistory.Items[count -2].ToString();
             
             NavigateThroughSurferLite(content);
+            TextBoxUrl.Text = "https://" + content;
+
             // Uri url = new Uri(content);
              //WebViewBrowse.Navigate(url);
             //WebViewBrowse.InvokeScript("eval", new[] { "(function(){ history.go(-1);})()" });
@@ -243,6 +245,7 @@ namespace SurferLite
         {
             String content = listboxhistory.Items[count - 1].ToString();
             NavigateThroughSurferLite(content);
+            TextBoxUrl.Text = "https://" + content;
         }
 
        
