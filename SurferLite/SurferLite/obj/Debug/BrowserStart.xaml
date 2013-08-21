@@ -15,7 +15,7 @@
         </Grid.ChildrenTransitions>
         <TextBlock HorizontalAlignment="Left" Margin="88,26,0,0" TextWrapping="Wrap" Text="Modify this with most used bookmarks in view which can be clicked to got o specific sites" VerticalAlignment="Top" FontSize="22"/>
         <ProgressRing x:Name="ProgressRingLoad" HorizontalAlignment="Left" Margin="438,52,0,0" VerticalAlignment="Top" Height="78" Width="150"/>
-        <WebView x:Name="WebViewBrowse" HorizontalAlignment="Left" Height="617" Margin="128,130,0,0" VerticalAlignment="Top" Width="718"/>
+        <WebView x:Name="WebViewBrowse" HorizontalAlignment="Left" Height="617" Margin="128,160,0,-9" VerticalAlignment="Top" Width="718"/>
         <TextBox x:ConnectionId='1' x:Name="TextBoxUrl" HorizontalAlignment="Left" Margin="128,95,0,0" TextWrapping="Wrap" Text="http://www.bing.com" VerticalAlignment="Top" Width="718"                   />
         <TextBlock x:Name="TextBlockSize" HorizontalAlignment="Left" Margin="862,130,0,0" TextWrapping="Wrap" Text="Size" VerticalAlignment="Top"/>
         <TextBlock x:Name="TextBlockAnsSize" HorizontalAlignment="Left" Margin="862,150,0,0" TextWrapping="Wrap" Text="AnsSize" VerticalAlignment="Top"/>
@@ -23,7 +23,16 @@
         <HyperlinkButton x:ConnectionId='3' Content="SeeSourceOfPage" HorizontalAlignment="Left" Margin="702,57,0,0" VerticalAlignment="Top"                                                />
         <TextBlock x:Name="TextBlockSource" HorizontalAlignment="Left" Margin="930,95,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="652" Width="392" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
         <Button x:ConnectionId='4' Content="Sign Out" HorizontalAlignment="Left" Margin="1226,26,0,0" VerticalAlignment="Top"                       />
-
+        <Button x:ConnectionId='5' x:Name="backbtn" Content="Back" HorizontalAlignment="Left" Margin="980,26,0,0" VerticalAlignment="Top"                      />
+        <ListBox x:Name="listboxhistory" HorizontalAlignment="Left" Height="31" Margin="128,129,0,0" VerticalAlignment="Top" Width="718" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollMode="Enabled">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+           
+        </ListBox>
+        <Button x:ConnectionId='6' x:Name="forwardbtn" Content="Forward" HorizontalAlignment="Left" Margin="1051,26,0,0" VerticalAlignment="Top" Width="89"                         />
     </Grid>
 </Page>
 

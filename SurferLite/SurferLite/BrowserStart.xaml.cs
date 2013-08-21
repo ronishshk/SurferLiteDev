@@ -25,6 +25,7 @@ namespace SurferLite
     /// /// </summary>
     public sealed partial class BrowserStart : Page
     {
+        int count=0 ;
         // Reference to the WCF service
         ServiceReferenceForTest.Service1Client client;
 
@@ -169,7 +170,8 @@ namespace SurferLite
             {
                 // Navigate to the given url through Service
                 NavigateThroughSurferLite(TextBoxUrl.Text);
-
+                listboxhistory.Items.Add(TextBoxUrl.Text);
+                count++;
                 // Get list of hrefs in the requested page from server
                 try
                 {
@@ -225,6 +227,22 @@ namespace SurferLite
         private void SignOutClicked(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void backbtn_Click(object sender, RoutedEventArgs e)
+        {
+            String content = listboxhistory.Items[count -2].ToString();
+            
+            NavigateThroughSurferLite(content);
+            // Uri url = new Uri(content);
+             //WebViewBrowse.Navigate(url);
+            //WebViewBrowse.InvokeScript("eval", new[] { "(function(){ history.go(-1);})()" });
+        }
+
+        private void forwardbtn_Click(object sender, RoutedEventArgs e)
+        {
+            String content = listboxhistory.Items[count - 1].ToString();
+            NavigateThroughSurferLite(content);
         }
 
        
